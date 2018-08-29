@@ -28,12 +28,8 @@ def won?(board)
           end
           
 def full?(board)
-board.all? {|index| index == "X" || "O"} 
-  return true 
-else 
-  return false 
-end
-end 
+    board.all? {|index| index == "X" || index == "O"}
+  end
 
 def draw?(board)
   if full?(board) == true &&
