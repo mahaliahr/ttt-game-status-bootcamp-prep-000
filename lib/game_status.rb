@@ -56,7 +56,7 @@ def winner(board)
      x.length > o.length 
      return "X"
    elsif won?(board) &&
-     o.length < x.length
+     o.length > x.length
      return "O"
    else 
      nil 
