@@ -31,7 +31,8 @@ def full?(board)
 if board.all? do |index| index == "X" || "O"
   return true 
 else 
-  return false end
+  return false 
+  end
 end
 end 
 
