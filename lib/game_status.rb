@@ -52,10 +52,10 @@ def winner(board)
    x = board.select {|x| x == "X"}
    o = board.select {|o| o == "O"}
    
-   if won?(board) == true &&
+   if won?(board)  &&
      x.length > o.length 
      return "X"
-   elsif won?(board) == true &&
+   elsif won?(board) &&
      o.length < x.length
      return "O"
    else 
